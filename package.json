@@ -1,0 +1,15 @@
+{
+  "name": "Autheny Discord Bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Triscuit#1337",
+  "license": "",
+  "dependencies": {
+    "discord.js": "^12.0.0",
+    "request": "^2.88.0"
+  }
+}

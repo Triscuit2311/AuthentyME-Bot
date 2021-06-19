@@ -1,0 +1,12 @@
+{
+
+	"_Comment": "DISCORD INFO",
+	"prefix": "~",
+	"token": "-DISCORD BOT TOKEN-",
+	"admintag": "-ADMIN DISCORD TAG (triscuit#1337)-",
+
+	"_Comment2": "AUTHENTY INFO",
+	"AUTHENTY_API_KEY": "-AUTHENTY API KEY-",
+	"AUTHENTY_APP_KEY": "-AUTHENTY APP KEY-"
+
+}
