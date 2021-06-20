@@ -40,7 +40,7 @@ $ npm install axios
 ```
 $ node index.js
 ```
-* On windows you can run Launch.ps1
+* On windows you can run Launch.ps1 or use the VS project to launch index.js with node tools.
 
 ## Discord Commands
 
@@ -67,9 +67,6 @@ User Commands:
 
  Triscuit2311
 
-## Version History
-
-* 1.0 - Initial release
 
 ## License
 
