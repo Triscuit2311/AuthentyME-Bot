@@ -41,6 +41,8 @@ module.exports = {
 			  })
 			  .catch((err) => {
 				  console.log(err);
+				  let errormsg= myModule.handle(err);
+				  message.reply(errormsg);
 			  })
 				
 

@@ -2,11 +2,11 @@
 
 	"_Comment": "DISCORD INFO",
 	"prefix": "~",
-	"token": "-DISCORD BOT TOKEN-",
-	"admintag": "-ADMIN DISCORD TAG (triscuit#1337)-",
+	"token": "ODU1NjE3Njg4ODY0ODE3MTUy.YM1GEQ.dyHkAuofD5OyK0jFzkyAVNJZzGE",
+	"admintag": "triscuit#1337",
 
 	"_Comment2": "AUTHENTY INFO",
-	"AUTHENTY_API_KEY": "-AUTHENTY API KEY-",
-	"AUTHENTY_APP_KEY": "-AUTHENTY APP KEY-"
+	"AUTHENTY_API_KEY": "3wv1OfbDEcMGWdI94jhV2J7aq",
+	"AUTHENTY_APP_KEY": "1276bac09286a611434126649cb14ac9"
 
 }

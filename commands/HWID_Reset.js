@@ -1,6 +1,9 @@
 const axios = require('axios')
 const { AUTHENTY_API_KEY,AUTHENTY_APP_KEY,admintag } = require('../config.json');     // Loads the "token" and "prefix" values from the config file
 
+const myModule = require('../errorhandling');
+
+
 module.exports = {
 	adminonly: true,
     name: 'hwidreset',
@@ -14,6 +17,7 @@ module.exports = {
 			
 		/*-----------------------COMMAND EXECUTION--------------------*/
 		
+
 		
 			const params = new URLSearchParams()
 			params.append('app_key', AUTHENTY_APP_KEY)
@@ -34,6 +38,8 @@ module.exports = {
 			  })
 			  .catch((err) => {
 				  console.log(err);
+				  let errormsg= myModule.handle(err);
+				  message.reply(errormsg);
 			  })
 				
 

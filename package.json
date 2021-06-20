@@ -1,16 +1,23 @@
 {
-  "name": "Autheny Discord Bot",
+  "name": "Authenty Discord Bot",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "scripts": 
+  {
+    "test": "exit 1"
   },
+  
   "author": "Triscuit#1337",
   "license": "",
-  "dependencies": {
+  "dependencies": 
+  
+  {
     "axios": "^0.21.1",
     "discord.js": "^12.5.3",
     "request": "^2.88.0"
-  }
+  },
+  
+  "type": "errorhandling"
+  
 }
