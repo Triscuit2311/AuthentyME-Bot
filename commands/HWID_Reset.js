@@ -1,7 +1,7 @@
 const axios = require('axios')
 const { AUTHENTY_API_KEY,AUTHENTY_APP_KEY,admintag } = require('../config.json');     // Loads the "token" and "prefix" values from the config file
 
-const myModule = require('../errorhandling');
+const errModule = require('../errorhandling');
 
 
 module.exports = {
@@ -38,7 +38,7 @@ module.exports = {
 			  })
 			  .catch((err) => {
 				  console.log(err);
-				  let errormsg= myModule.handle(err);
+				  let errormsg= errModule.handle(err);
 				  message.reply(errormsg);
 			  })
 				
