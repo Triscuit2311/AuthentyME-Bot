@@ -6,6 +6,10 @@ A discord bot to help with user administration and license management for the AU
 
 This bot has commands for both users (Password change, HWID reset) and more extensive controls for admins (User management, HWIDs, Licenses, etc.)
 
+Error handling for all types of response errors.
+
+Embeds for commands :)
+
 ## Setting Up
 
 ### Dependencies
