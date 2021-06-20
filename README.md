@@ -10,7 +10,9 @@ This bot has commands for both users (Password change, HWID reset) and more exte
 
 Error handling for all types of response errors.
 
-Embeds for commands :)
+Embeds for commands.
+
+Commands with bad syntax will tell you how to use them (assuming you are the proper user group).
 
 ## Setting Up
 
@@ -66,6 +68,7 @@ Admin Commands:
 
 User Commands:
 ```
+~help          ·    Gets all commands availiable to the requesting user. Can also get information for a single command.
 ~newhwid       ·    Resets the HWID of the user who sent the command.
 ~changepassword·    Changes your password.
 ```
