@@ -47,29 +47,19 @@ $ node index.js
 Admin Commands:
 ```
  ~hwidreset    ·    Resets the HWID of a specified user.
-         <username> 
- ~generatekeys    ·    Generates License Keys.
-         <amount> <days> <level> <Optional: Format> 
- ~users    ·    Requests the total number of active users we have.
-         No arguments for this command. 
- ~ban    ·    Bans a specified user.
-         <username> <Optional: Reason> 
- ~forcepassword    ·    Changes a specified user's password.
-         <username> <new password> 
- ~pulluser    ·    Gets information about a specified user.
-         <username> 
-~changepassword    ·    Changes your password.
-         <username> <new password> 
- ~unban    ·    Unbans a specified user.
-         <username> 
+ ~generatekeys ·    Generates License Keys.
+ ~users        ·    Requests the total number of active users we have.
+ ~ban          ·    Bans a specified user.
+ ~forcepassword·    Changes a specified user's password.
+ ~pulluser     ·    Gets information about a specified user.
+~changepassword·    Changes your password.
+ ~unban        ·    Unbans a specified user.
 ```
 
 User Commands:
 ```
-~newhwid    ·    Resets the HWID of the user who sent the command.
-         No arguments for this command. 
-~changepassword    ·    Changes your password.
-         <username> <new password> 
+~newhwid       ·    Resets the HWID of the user who sent the command.
+~changepassword·    Changes your password.
 ```
 
 ## Authors
