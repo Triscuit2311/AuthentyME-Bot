@@ -48,11 +48,12 @@ Admin Commands:
 ```
  ~hwidreset    ·    Resets the HWID of a specified user.
  ~generatekeys ·    Generates License Keys.
+ 
  ~users        ·    Requests the total number of active users we have.
- ~ban          ·    Bans a specified user.
  ~forcepassword·    Changes a specified user's password.
  ~pulluser     ·    Gets information about a specified user.
-~changepassword·    Changes your password.
+ 
+ ~ban          ·    Bans a specified user.
  ~unban        ·    Unbans a specified user.
 ```
 
