@@ -48,7 +48,8 @@ Admin Commands:
 ```
  ~hwidreset    ·    Resets the HWID of a specified user.
  ~generatekeys ·    Generates License Keys.
- 
+ ~keydata      ·    Gets information about a specified key.
+  
  ~users        ·    Requests the total number of active users we have.
  ~forcepassword·    Changes a specified user's password.
  ~pulluser     ·    Gets information about a specified user.
