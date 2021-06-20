@@ -1,5 +1,7 @@
 # Authenty.ME Discord Bot
 
+![AuthentyME-Bot](https://socialify.git.ci/Triscuit2311/AuthentyME-Bot/image?description=1&descriptionEditable=Discord%20bot%20for%20the%20Authenty.me%20auth%20platform.&font=Source%20Code%20Pro&language=1&owner=1&pattern=Diagonal%20Stripes&stargazers=1&theme=Dark)
+
 A discord bot to help with user administration and license management for the AUthenty.ME platform.
 
 ## Features / Info
