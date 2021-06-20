@@ -1,0 +1,3 @@
+C:\Users\DT\Documents\GitHub\AuthentyME-Bot\obj\Debug\AuthentyME-Bot.njsproj.AssemblyReference.cache
+C:\Users\DT\Documents\GitHub\AuthentyME-Bot\obj\Debug\AuthentyME-Bot.njsproj.CoreCompileInputs.cache
+C:\Users\DT\Documents\GitHub\AuthentyME-Bot\bin\Microsoft.NodejsTools.WebRole.dll

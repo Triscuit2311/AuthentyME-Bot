@@ -1,7 +1,8 @@
 module.exports = {
    handle: function(error) {
 	   var str = '';
-	   
+
+
 	   switch(error.response.status)
 	   {
 		   case 400:
@@ -28,11 +29,11 @@ module.exports = {
 			default:
 			str = `Error ${error.response.status} : ${error.response.data.error_code}`; 
 			break;
-	   }
-
+		}
+		if (error.response.data.error_code == 'undefined') {
+			console.log(str);
+			return '';
+		}
       return str;
    }
 }
-
-
-///err.response.data.error_code

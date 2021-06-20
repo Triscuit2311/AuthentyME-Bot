@@ -1,5 +1,6 @@
 const axios = require('axios')
-const { AUTHENTY_API_KEY,AUTHENTY_APP_KEY,admintag,prefix } = require('../config.json');     // Loads the "token" and "prefix" values from the config file
+const { AUTHENTY_API_KEY, AUTHENTY_APP_KEY, admintag, botname, embedcolor, prefix, embedimage } = require('../config.json');
+const Discord = require('discord.js');
 const errModule = require('../errorhandling');
 
 module.exports = {
@@ -33,7 +34,17 @@ module.exports = {
 
 			axios.post('https://biitez.dev/api/authenty/users/', params, config)
 			  .then((result) => {
-				message.reply(`Your password has changed successfully.` );
+
+				  const embed = new Discord.MessageEmbed()
+					  .setTitle(`${message.author.tag}, Your password has changed successfully.`)
+					  .setTimestamp()
+					  .setFooter("Bot By Triscuit#1337")
+					  .setAuthor(botname, embedimage)
+					  .setThumbnail(embedimage)
+					  .setColor(embedcolor)
+				  message.channel.send(embed)
+
+
 			  })
 			  .catch((err) => {
 				  console.log(err);

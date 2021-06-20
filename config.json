@@ -5,7 +5,14 @@
 	"token": "ODU1NjE3Njg4ODY0ODE3MTUy.YM1GEQ.dyHkAuofD5OyK0jFzkyAVNJZzGE",
 	"admintag": "triscuit#1337",
 
-	"_Comment2": "AUTHENTY INFO",
+
+	"_Comment2": "Embed options",
+	"botname": "AuthentyME Bot",
+	"embedimage": "https://i.ibb.co/qmj3d5m/httpsbiitezdev.png",
+	"embedcolor": 9722458,
+
+
+	"_Comment3": "AUTHENTY INFO",
 	"AUTHENTY_API_KEY": "3wv1OfbDEcMGWdI94jhV2J7aq",
 	"AUTHENTY_APP_KEY": "1276bac09286a611434126649cb14ac9"
 

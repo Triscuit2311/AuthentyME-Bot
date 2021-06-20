@@ -1,6 +1,7 @@
 const axios = require('axios')
-const { AUTHENTY_API_KEY,AUTHENTY_APP_KEY,admintag,prefix } = require('../config.json');     // Loads the "token" and "prefix" values from the config file
+const { AUTHENTY_API_KEY, AUTHENTY_APP_KEY, admintag, botname, embedcolor, prefix } = require('../config.json');     
 const errModule = require('../errorhandling');
+const Discord = require('discord.js');
 
 module.exports = {
 	adminonly: true,
@@ -39,14 +40,24 @@ module.exports = {
 			
 			  .then((result) => {
 				  
-				
-				message.reply(`Sucessfully generated ${args[0]} ${args[1]} Day keys, at level ${args[2]}. Keys:`);
-				
+
+				var str = '\`\`\`';
 				result.data.licenses.forEach(function(index){
-					message.channel.send(`\t${index}\n`);
-					
+					str += `${index}\n`;
 				});
-				
+				  str += '\`\`\`';
+				  const embed = new Discord.MessageEmbed()
+					  .setTitle(`Sucessfully generated ${args[0]} keys.`)
+					  .setDescription(`**Time:** ${args[1]} Day\n**Level:** ${args[2]}`)
+					  .setTimestamp()
+					  .setFooter("Bot By Triscuit#1337")
+					  .setAuthor(botname, 'https://i.ibb.co/qmj3d5m/httpsbiitezdev.png')
+					  .addField("Keys", str)
+					  .setThumbnail("https://i.ibb.co/qmj3d5m/httpsbiitezdev.png")
+					  .setColor(embedcolor)
+					  message.channel.send(embed)
+
+
 			  })
 			  .catch((err) => {
 				  console.log(err);

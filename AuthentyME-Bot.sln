@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31410.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "AuthentyME-Bot", "AuthentyME-Bot.njsproj", "{0FDE38DE-32D2-4CF8-8BF3-990AE9C5C748}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0FDE38DE-32D2-4CF8-8BF3-990AE9C5C748}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FDE38DE-32D2-4CF8-8BF3-990AE9C5C748}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FDE38DE-32D2-4CF8-8BF3-990AE9C5C748}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FDE38DE-32D2-4CF8-8BF3-990AE9C5C748}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {45C95802-2BBE-4C12-8E74-C5B83E9F0411}
+	EndGlobalSection
+EndGlobal

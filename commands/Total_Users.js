@@ -1,5 +1,6 @@
 const axios = require('axios')
-const { AUTHENTY_API_KEY,AUTHENTY_APP_KEY } = require('../config.json');     // Loads the "token" and "prefix" values from the config file
+const { AUTHENTY_API_KEY, AUTHENTY_APP_KEY, admintag, botname, embedcolor, prefix, embedimage } = require('../config.json');
+const Discord = require('discord.js');
 const errModule = require('../errorhandling');
 
 module.exports = {
@@ -27,9 +28,20 @@ module.exports = {
 		}
 
 		axios.post('https://biitez.dev/api/authenty/users/', params, config)
-		  .then((result) => {
-			console.log('Bot Retrived Total Users: ' + result.data.total_users + ' for user: ' + message.author.tag)
-			message.reply('We have **' + result.data.total_users + '** active users.');
+			.then((result) => {
+
+
+			  const embed = new Discord.MessageEmbed()
+				  .setTitle(`We have **${result.data.total_users}** active users.`)
+				  .setTimestamp()
+				  .setFooter("Bot By Triscuit#1337")
+				  .setAuthor(botname, embedimage)
+				  .setThumbnail(embedimage)
+				  .setColor(embedcolor)
+			  message.channel.send(embed)
+
+
+
 		  })
 		  .catch((err) => {
 			  console.log(err);

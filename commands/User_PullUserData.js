@@ -1,6 +1,7 @@
 const axios = require('axios')
-const { AUTHENTY_API_KEY,AUTHENTY_APP_KEY,admintag,prefix } = require('../config.json');     // Loads the "token" and "prefix" values from the config file
+const { AUTHENTY_API_KEY, AUTHENTY_APP_KEY, admintag, botname, embedcolor, prefix } = require('../config.json');     
 const errModule = require('../errorhandling');
+const Discord = require('discord.js');
 
 module.exports = {
 	adminonly: true,
@@ -31,13 +32,26 @@ module.exports = {
 
 			axios.post('https://biitez.dev/api/authenty/users/', params, config)
 			  .then((result) => {
-				message.reply(
-				`User Data for ${result.data.username}:\n`+
-				`\tEmail: ${result.data.email}\n`+
-				`\tHWID: ${result.data.hwid}\n`+
-				`\tlast IP: ${result.data.lastipaddress}\n`+
-				`\tlast Login: ${result.data.lastlogin}\n`
-				);
+
+
+				  const embed = new Discord.MessageEmbed()
+					  .setTitle(`Data Request for user [${result.data.username}]`)
+					  .setTimestamp()
+					  .setFooter("Bot By Triscuit#1337")
+					  .setAuthor(botname, 'https://i.ibb.co/qmj3d5m/httpsbiitezdev.png')
+					  .addField("User Data",
+						  `->**Status:** ` + (result.data.isbanned ? 'Banned' : 'Active') +
+						  `\n->**HWID:** ${result.data.hwid}\n` +
+						  `->**Email:** ${result.data.email}\n` +
+						  `->**Last IP:** ${result.data.lastipaddress}\n` +
+						  `->**Last Login:** ${result.data.lastlogin}\n`
+					  )
+					  .setThumbnail("https://i.ibb.co/qmj3d5m/httpsbiitezdev.png")
+					  .setColor(embedcolor)
+				  message.channel.send(embed)
+
+
+
 			  })
 			  .catch((err) => {
 				  console.log(err);

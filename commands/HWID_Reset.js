@@ -1,6 +1,6 @@
 const axios = require('axios')
-const { AUTHENTY_API_KEY,AUTHENTY_APP_KEY,admintag } = require('../config.json');     // Loads the "token" and "prefix" values from the config file
-
+const { AUTHENTY_API_KEY, AUTHENTY_APP_KEY, admintag, botname, embedcolor, prefix,embedimage } = require('../config.json');     
+const Discord = require('discord.js');
 const errModule = require('../errorhandling');
 
 
@@ -17,8 +17,6 @@ module.exports = {
 			
 		/*-----------------------COMMAND EXECUTION--------------------*/
 		
-
-		
 			const params = new URLSearchParams()
 			params.append('app_key', AUTHENTY_APP_KEY)
 			params.append('api_key', AUTHENTY_API_KEY)
@@ -34,14 +32,25 @@ module.exports = {
 
 			axios.post('https://biitez.dev/api/authenty/hwid/', params, config)
 			  .then((result) => {
-				message.reply(`HWID for ${args[0]} has been reset successfully.` );
+
+                 
+
+				  const embed = new Discord.MessageEmbed()
+					  .setTitle(`HWID for ${args[0]} has been reset successfully.`)
+					  .setTimestamp()
+					  .setFooter("Bot By Triscuit#1337")
+					  .setAuthor(botname, embedimage)
+					  .setThumbnail(embedimage)
+					  .setColor(embedcolor)
+				  message.channel.send(embed)
+
+
 			  })
 			  .catch((err) => {
 				  console.log(err);
 				  let errormsg= errModule.handle(err);
 				  message.reply(errormsg);
 			  })
-				
 
 		/*------------------------------------------------------------*/
 		}else if(module.exports.adminonly && normalizedTag != admintag) 
@@ -49,8 +58,6 @@ module.exports = {
 			message.reply(`${admintag} if the only one allowed to use this command.` );
 			console.log(`${message.author.tag} attempted to use the admin only command: ${module.exports.name}`);
 		}
-		
-		
-		
+
     },
 };
